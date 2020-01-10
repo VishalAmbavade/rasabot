@@ -122,7 +122,7 @@ class FindFacilityTypes(Action):
                  "payload": payload})
 
         # TODO: update rasa core version for configurable `button_type`
-        dispatcher.utter_button_template("utter_greet", buttons, tracker)
+        dispatcher.utter_message("utter_greet", buttons, tracker)
         return []
 
 
